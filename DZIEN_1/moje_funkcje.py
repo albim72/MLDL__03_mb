@@ -33,3 +33,16 @@ print(cube)
 
 kwadraty = [i**2 for i in range(5,105,5)]
 print(kwadraty)
+
+#funkcje wyższego rzędu
+def witaj(imie):
+    return f"Miło Cię widzieć {imie}"
+
+
+import bfunkcje as bf
+def osoba(funkcja,*args):
+    return funkcja(*args)
+
+print(osoba(witaj,"Leon"))
+print(osoba(bf.konkurs,"Anna",67,12))
+print(osoba(bf.bonus,67,6))
